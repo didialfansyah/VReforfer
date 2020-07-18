@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="style/css/style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <title>Victor Reforfer</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light navbarEdit" style="padding:20px" id="navbar">
+            <a class="navbar-brand" href="#">
+                <img src="images/logoNav.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+                VReforfer
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+                <a class="nav-item nav-link" href="blog.html">Blog</a>
+                <a class="nav-item nav-link" href="about.html">About Us</a>
+                <a class="nav-item nav-link active" href="contact.html">Contact</a>
+              </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid judulBan">
+            <div class="container" style="padding:0;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>CONTACT US</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.296811811442!2d106.80848991462184!3d-6.224539795494129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1513da53aef%3A0x88d13547f1f25035!2sJl.%20Jend.%20sudirman%20kav%2052-53%20No.5%2C%20RT.5%2FRW.3%2C%20Senayan%2C%20Kec.%20Kby.%20Baru%2C%20Kota%20Jakarta%20Selatan%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2012190!5e0!3m2!1sen!2sid!4v1594994398039!5m2!1sen!2sid" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="labelAbout">
+                        SEND US A MESSAGE
+                    </div>
+                    <div class="fAbout">
+                        <div class="alert alert-success hides" id="alSuccess" role="alert">
+                            Your Messages Sending Success
+                        </div>
+                        <div class="form-group">
+                            <label for="name" id="lname" class="hide">Name</label>
+                            <div id="notename" class="box hide">
+                                
+                            </div>
+                            <input type="text" stt="0" class="form-control" id="name" placeholder="Name" onfocus="formFocus(this.id);" onblur="formBlur(this.id)">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" id="lemail" class="hide">E-mail</label>
+                            <div id="noteemail" class="box hide">
+                                
+                            </div>
+                            <input type="email" stt="0" class="form-control" id="email" placeholder="E-mail" aria-describedby="emailHelp" onfocus="formFocus(this.id);" onblur="formBlur(this.id)">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" id="lsubject" class="hide">Subject</label>
+                            <div id="notesubject" class="box hide">
+                                
+                            </div>
+                            <input type="text" stt="0" class="form-control" id="subject" placeholder="Subject" onfocus="formFocus(this.id);" onblur="formBlur(this.id)">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" id="lmessage" class="hide">Message</label>
+                            <div id="notemessage" class="box hide">
+                                
+                            </div>
+                            <textarea class="form-control" stt="0" style="border-radius: 0px;" id="message" rows="4" placeholder="Message" onfocus="formFocus(this.id);" onblur="formBlur(this.id)"></textarea>
+                        </div>
+                        <button type="submit" onclick="formValid();" style="border-radius: 0px; background: #00d8d6; border-color: #00d8d6;" class="btn btn-primary">Send a Message</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="labelAbout">
+                        CONTACT INFO
+                    </div>
+                    <table class="conInfo">
+                        <tr>
+                            <td><i class="fa fa-map-marker"></i></td>
+                            <td>Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-address-card"></td>
+                            <td>+62 80000 102</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-envelope"></i></td>
+                            <td>didialfansyah@gmail.com</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="background: #2c3e50; color: #ecf0f1; padding-top: 40px; padding-bottom: 40px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4" style="text-align: justify;">
+                        <img src="images/logoNav.png" width="100px"/>
+                        <h2>Are you Interested ? </h2>
+                        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet urna in massa ullamcorper venenatis.</h6>
+                        <button type="submit" class="btn btn-primary btn-lg" style="background: #00d8d6; border-radius: 0;">Join Us !</button>
+                    </div>
+                    <div class="col-md-8">
+                        <table class="address">
+                            <tr>
+                                <td><img src="https://s3-eu-west-1.amazonaws.com/altario-wordpressmedia/wp-content/uploads/2020/03/31160838/WTXa832.png" alt=""></td>
+                                <td>
+                                    <h2>JAKARTA</h2>
+                                    <p>
+                                        Jl. Jenderal Sudirman Kav. 52-53 Jakarta 12190.<br/>
+                                        P.O. BOX 6917 Jakarta Selatan, Indonesia<br/>
+                                        Telp (+6221) 29738750.<br/>
+                                        Fax (+6221) 27936331.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="https://s3-eu-west-1.amazonaws.com/altario-wordpressmedia/wp-content/uploads/2020/03/31160823/1g4xPyl.png" alt=""></td>
+                                <td>
+                                    <h2>MEDAN</h2>
+                                    <p>
+                                        Jl. R.A Kartini 21, Medan 20152, Sumatera Utara.<br/>
+                                        P.O.BOX 1200 Medan.<br/>
+                                        Telp: (+6261) 4556946<br/>
+                                        Fax(+6261) 4537885
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="background: #222f3e; color: #ecf0f1; padding-top: 30px; padding-bottom: 30px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        © 2020 HACKTIV8 WORKSHOP PROGRAM <a class="vreforfer" href="#">Didi Alfansyah</a>
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="blog1" style="display: none;"></div>
+        <div id="blog2" style="display: none;"></div>
+        <div id="oPort" style="display: none;"></div>
+        <div id="ourTeam" style="display: none;"></div>
+        <div id="popularB" style="display: none;"></div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script src="style/js/index.js"></script>
+    </body>
+</html>
